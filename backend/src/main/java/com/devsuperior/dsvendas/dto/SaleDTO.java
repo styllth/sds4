@@ -11,10 +11,10 @@ public class SaleDTO {
 	private Integer deals;
 	private Double amount;
 	private LocalDate date;
-	
+
 	private SellerDTO seller;
-	
-	public SaleDTO(){
+
+	public SaleDTO() {
 	}
 
 	public SaleDTO(long id, Integer visited, Integer deals, Double amount, LocalDate date, SellerDTO seller) {
@@ -25,7 +25,7 @@ public class SaleDTO {
 		this.date = date;
 		this.seller = seller;
 	}
-	
+
 	public SaleDTO(Sale entity) {
 		id = entity.getId();
 		visited = entity.getVisited();
@@ -82,5 +82,5 @@ public class SaleDTO {
 	public void setSeller(SellerDTO seller) {
 		this.seller = seller;
 	}
-	
+
 }
